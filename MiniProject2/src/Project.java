@@ -1,7 +1,10 @@
 
 
+import java.awt.List;
 import java.io.File;
 import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Set;
@@ -9,8 +12,11 @@ import java.util.Set;
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.FileDocumentSource;
+import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
@@ -20,16 +26,17 @@ import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 public class Project {
 	private static OWLOntology myOntology;
-	private static OWLReasoner reasoner;
 	private static OWLDataFactory df;
 	private static OWLOntologyManager m;
 	
@@ -42,9 +49,7 @@ public class Project {
 		myOntology=m.loadOntologyFromOntologyDocument(
 				  new FileDocumentSource(new File("resources/mp2.owl")),
 				  loaderConf);
-		reasoner=new Reasoner.ReasonerFactory().createReasoner(myOntology);
-
-		  
+		
 		System.out.println("\n\n------------------------------");
 		System.out.println("SemTech Mini Project 2");
 		System.out.println("Authors: Stefan | Max");
@@ -91,7 +96,7 @@ public class Project {
 		case 2:
 			showSpecific();
 			break;
-		case 4:
+		case 3:
 			insertBurger();
 			break;
 		default:
@@ -103,8 +108,60 @@ public class Project {
 	}
 	
 	private static void insertBurger() {
-
+		System.out.println("\n\n------------------------------");
+		System.out.print("Class of individual: ");
+		Scanner sc = new Scanner(System.in);
+		String inClass = sc.nextLine();
+		System.out.print("IriName of individual: ");
+		String name = sc.nextLine();
 		
+		OWLClass cls = df.getOWLClass(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + inClass));
+		
+		OWLNamedIndividual newIndi = df.getOWLNamedIndividual(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + name));
+		ArrayList<OWLOntologyChange> add = new ArrayList<OWLOntologyChange>();
+		
+		OWLClassAssertionAxiom classAssertion = df.getOWLClassAssertionAxiom(cls, newIndi);
+		 m.addAxiom(myOntology, classAssertion);
+         
+         try {
+			m.saveOntology(myOntology);
+		} catch (OWLOntologyStorageException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+        OWLReasoner reasoner=new Reasoner.ReasonerFactory().createReasoner(myOntology);
+		Set<OWLObjectPropertyExpression> props = getProperties(m, myOntology, reasoner, cls);
+		
+		for (OWLObjectPropertyExpression prop : props) {
+			OWLClassExpression range = prop.getRanges(myOntology).iterator().next();
+			System.out.print(range.asOWLClass().getIRI().getFragment() + ": ");
+			
+			OWLClass cls2 = df.getOWLClass(range.asOWLClass().getIRI());
+
+	        
+	        NodeSet<OWLNamedIndividual> instances = reasoner.getInstances(cls2, false);
+	        System.out.print("(");
+	        int j = 0;
+	        for (OWLNamedIndividual i : instances.getFlattened()) {
+	        	System.out.print("(" + j + ")");
+	            System.out.print(i.getIRI().getFragment());    
+	            System.out.print(",");
+	            j++;
+	        }
+	        
+	        System.out.print(" ");
+	        int action = sc.nextInt();
+			sc.nextLine();
+			
+			OWLNamedIndividual indi = (OWLNamedIndividual)instances.getFlattened().toArray()[action];
+			OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(prop, newIndi, indi);
+			add.add(new AddAxiom(myOntology, assertion));
+		}
+		m.applyChanges(add);
+
+		reasoner=new Reasoner.ReasonerFactory().createReasoner(myOntology);
+		System.out.println("Is consistent? " + reasoner.isConsistent());
 	}
 
 	private static void showSpecific() {
@@ -117,6 +174,7 @@ public class Project {
 
 		OWLClass cls = df.getOWLClass(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + inClass));
 
+		OWLReasoner reasoner=new Reasoner.ReasonerFactory().createReasoner(myOntology);
         NodeSet<OWLNamedIndividual> instances = reasoner.getInstances(cls, false);
     
         for (OWLNamedIndividual i : instances.getFlattened()) {
@@ -141,6 +199,7 @@ public class Project {
         System.out.println("My class is : " + cls.getIRI());                   
         System.out.println("-----------------------");
         
+        OWLReasoner reasoner=new Reasoner.ReasonerFactory().createReasoner(myOntology);
         NodeSet<OWLNamedIndividual> instances = reasoner.getInstances(cls, false);
         System.out.println("The Individuals of the class : ");
     
@@ -150,10 +209,11 @@ public class Project {
 	}
 	
 	// Prints out the properties that instances must have
-	private static void printProperties(
+	private static Set<OWLObjectPropertyExpression> getProperties(
 		OWLOntologyManager man, OWLOntology o,
 		OWLReasoner reasoner, OWLClass cls) {
 		System.out.println("Properties of " + cls);
+		Set<OWLObjectPropertyExpression> properties = new HashSet<OWLObjectPropertyExpression>();
 		for (OWLObjectPropertyExpression prop :
 		o.getObjectPropertiesInSignature()) {
 		// To test if an instance of A MUST have a p-filler,
@@ -165,8 +225,9 @@ public class Project {
 		df.getOWLObjectIntersectionOf(cls,
 		df.getOWLObjectComplementOf(restriction));
 		if (!reasoner.isSatisfiable(intersection))
-		System.out.println("Instances of "
-		+ cls + " must have " + prop);
+			properties.add(prop);
+		
 		}
+		return properties;
 	}
 }

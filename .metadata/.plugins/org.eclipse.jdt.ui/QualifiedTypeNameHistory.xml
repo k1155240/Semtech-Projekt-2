@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="org.semanticweb.owlapi.model.OWLAxiom"/>
+<fullyQualifiedTypeName name="org.semanticweb.owlapi.model.AddAxiom"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="org.semanticweb.owlapi.model.OWLClassAssertionAxiom"/>
+<fullyQualifiedTypeName name="org.semanticweb.owlapi.model.OWLOntologyChange"/>
+</qualifiedTypeNameHistroy>
