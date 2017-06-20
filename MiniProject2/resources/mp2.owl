@@ -1,0 +1,1901 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/max/ontologies/2017/5/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/max/ontologies/2017/5/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:MiniProjekt2="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#containsMeat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#containsMeat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CheeseBurger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomMeatBurger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleCheeseBurger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleHamBurger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatIngredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasAllergens -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasAllergens">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isBunOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isCheeseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPattyOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isSauceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isAlcoholic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isAlcoholic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Alcoholic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isBunOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isBunOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isCheeseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isCheeseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isNonAlcoholic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isNonAlcoholic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NonAlcoholic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPattyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPattyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isSauceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isSauceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Alcoholic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Alcoholic">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isAlcoholic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NonAlcoholic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CheeseBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CheeseBurger">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Custom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Custom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomMeatBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomMeatBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomVeganBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomVeganBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomVeggieBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#CustomVeggieBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleCheeseBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleCheeseBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleHamBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DoubleHamBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishPatty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasColor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#HamBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Large -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Large">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPrice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Middle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Middle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NonAlcoholic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NonAlcoholic">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isNonAlcoholic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodPatty"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Small -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Small">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeggieBurger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeggieBurger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#XLarge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#XLarge">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#XXLarge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#XXLarge">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Xtreme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Xtreme">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergens"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Egg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Feta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Feta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianCheese"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Feta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Red"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#White"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Green"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Rose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Rose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#FishPatty"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#43"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Rose"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SeafoodPatty"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianSauce"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganPatty"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianIngredient"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianBun"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VegetarianPatty"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Color"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#43"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+        <MiniProjekt2:isAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brown"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brown"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Cookie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Cookie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#43"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brown"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Cookie"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_DoubleCheeseBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_DoubleCheeseBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#500"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_DoubleCheeseBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_FishBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_FishBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_FishBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312"/>
+        <MiniProjekt2:hasColor rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Yellow"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HealthyBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HealthyBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HealthyBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Menu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Menu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#500"/>
+        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Menu"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#5,99"/>
+        <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SeafoodBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SeafoodBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SeafoodBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SmallMenu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SmallMenu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#500"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#5,99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99"/>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SpecialMenu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SpecialMenu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2000"/>
+        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SpecialMenu"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#10"/>
+        <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries"/>
+        <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2000"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brie"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Egg"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#5,99"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeganBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeganBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
+        <MiniProjekt2:hasName rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeganBurger"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeggieBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeggieBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasCalories rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
+        <MiniProjekt2:hasPrice rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#1,99">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2,49">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#2000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#303">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#312">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#43 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#43">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#5,99 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#5,99">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Calories"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
