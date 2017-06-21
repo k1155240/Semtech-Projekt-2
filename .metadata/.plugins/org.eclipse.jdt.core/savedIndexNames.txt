@@ -1,7 +1,6 @@
 INDEX VERSION 1.129+C:\Users\wolfsst\Documents\Uni\Semantische Technologien\UE\Project2\.metadata\.plugins\org.eclipse.jdt.core
 628019425.index
 4265864773.index
-3890457098.index
 3666609613.index
 3141958188.index
 848469205.index

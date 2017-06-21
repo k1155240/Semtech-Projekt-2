@@ -135,7 +135,7 @@ public class Project {
 		
 		for (OWLObjectPropertyExpression prop : props) {
 			OWLClassExpression range = prop.getRanges(myOntology).iterator().next();
-			System.out.print(range.asOWLClass().getIRI().getFragment() + ": ");
+			System.out.print(prop.getNamedProperty().getIRI().getFragment() + " " +  range.asOWLClass().getIRI().getFragment() + ": ");
 			
 			OWLClass cls2 = df.getOWLClass(range.asOWLClass().getIRI());
 
