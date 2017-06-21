@@ -3,7 +3,6 @@
      xml:base="http://www.semanticweb.org/max/ontologies/2017/5/untitled-ontology-9"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:MiniProjekt2="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
@@ -25,9 +24,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#containsMeat -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#containsMeat">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -35,9 +34,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasAllergens -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasAllergens">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergens"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -45,10 +44,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBun">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isBunOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerBun"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isBunOf"/>
     </owl:ObjectProperty>
     
 
@@ -56,9 +55,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -66,10 +65,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCheese">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isCheeseOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerCheese"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isCheeseOf"/>
     </owl:ObjectProperty>
     
 
@@ -77,9 +76,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -87,9 +86,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -97,10 +96,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isIngredientOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isIngredientOf"/>
     </owl:ObjectProperty>
     
 
@@ -108,10 +107,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Food"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPartOf"/>
     </owl:ObjectProperty>
     
 
@@ -119,10 +118,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPattyOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerPatty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isPattyOf"/>
     </owl:ObjectProperty>
     
 
@@ -130,10 +129,10 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSauce">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isSauceOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerSauce"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasParts"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isSauceOf"/>
     </owl:ObjectProperty>
     
 
@@ -141,9 +140,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -151,9 +150,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isAlcoholic -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isAlcoholic">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Alcoholic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -185,9 +184,9 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isNonAlcoholic -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#isNonAlcoholic">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NonAlcoholic"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -230,8 +229,8 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasCalories">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -239,8 +238,8 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -248,8 +247,8 @@
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPrice -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPrice">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -302,8 +301,8 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasIngredient"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BurgerIngredients"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -563,13 +562,13 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -587,13 +586,13 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -621,8 +620,8 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -641,8 +640,8 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasPatty"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#MeatPatty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -723,23 +722,23 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -785,18 +784,18 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -864,13 +863,13 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1003,13 +1002,13 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeggieBurger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1063,23 +1062,23 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1098,23 +1097,23 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1133,23 +1132,23 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasBurger"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDessert"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasDrink"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#hasSideDish"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1332,6 +1331,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NewBurger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#NewBurger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion">
@@ -1473,10 +1484,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
-        <MiniProjekt2:isAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.99</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Beer</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:isAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
     </owl:NamedIndividual>
     
 
@@ -1485,16 +1496,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">263</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasName>Cheeseburger</MiniProjekt2:hasName>
         <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
         <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">263</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Cheeseburger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
     </owl:NamedIndividual>
     
 
@@ -1503,9 +1514,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_ChickenNugget">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.29</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">296</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Chicken Nugget</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.29</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1514,10 +1525,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
-        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee"/>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Coffee</MiniProjekt2:hasName>
         <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasName>Coffee</MiniProjekt2:hasName>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coffee"/>
     </owl:NamedIndividual>
     
 
@@ -1526,10 +1537,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
-        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.49</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Coke</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.49</MiniProjekt2:hasPrice>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
     </owl:NamedIndividual>
     
 
@@ -1538,10 +1549,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Cookie">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.49</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">343</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Cookie</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.49</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
     </owl:NamedIndividual>
     
 
@@ -1550,9 +1561,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.79</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Curly Fries</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.79</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1561,21 +1572,21 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_DoubleCheeseBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Double Cheeseburger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
     </owl:NamedIndividual>
     
 
@@ -1584,10 +1595,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fanta">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
-        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fanta"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.29</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Fanta</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.29</MiniProjekt2:hasPrice>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fanta"/>
     </owl:NamedIndividual>
     
 
@@ -1596,15 +1607,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_FishBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.49</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">345</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Fishburger</MiniProjekt2:hasName>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Salmon"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
     </owl:NamedIndividual>
     
 
@@ -1613,9 +1624,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SideDish"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Fries</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1624,16 +1635,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasName>Hamburger</MiniProjekt2:hasName>
         <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Hamburger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1642,17 +1653,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HealthyBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasName>Healthy Burger</MiniProjekt2:hasName>
         <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
-        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
         <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
         <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Healthy Burger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.99</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1661,10 +1672,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Ice Cream</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
     </owl:NamedIndividual>
     
 
@@ -1673,14 +1684,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Menu">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger"/>
-        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
-        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
-        <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.99</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Menu</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CheeseBurger"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
+        <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
+        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
     </owl:NamedIndividual>
     
 
@@ -1689,9 +1700,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Muffin">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Dessert"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">377</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Muffin</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</MiniProjekt2:hasPrice>
     </owl:NamedIndividual>
     
 
@@ -1700,17 +1711,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SeafoodBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
-        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.59</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">246</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Seafood Burger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.59</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Seafood"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
     </owl:NamedIndividual>
     
 
@@ -1719,11 +1730,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SmallMenu">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
-        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger"/>
-        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.99</MiniProjekt2:hasPrice>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Small Menu</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_HamBurger"/>
+        <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
     </owl:NamedIndividual>
     
 
@@ -1732,10 +1743,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Drink"/>
-        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Soda</MiniProjekt2:hasName>
         <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasName>Soda</MiniProjekt2:hasName>
+        <MiniProjekt2:isNonAlcoholic rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Soda"/>
     </owl:NamedIndividual>
     
 
@@ -1744,15 +1755,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SpecialMenu">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Menu"/>
-        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger"/>
-        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasName>Special Menu</MiniProjekt2:hasName>
         <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Beer"/>
         <MiniProjekt2:hasDrink rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Coke"/>
         <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_CurlyFries"/>
         <MiniProjekt2:hasSideDish rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_Fries"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Special Menu</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasDessert rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_IceCream"/>
+        <MiniProjekt2:hasBurger rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger"/>
     </owl:NamedIndividual>
     
 
@@ -1761,30 +1772,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_SuperBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
-        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasName>Super Burger</MiniProjekt2:hasName>
         <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
         <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Brie"/>
         <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
-        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Bacon"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Egg"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Emmental"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Lettuce"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pickle"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Beef"/>
+        <MiniProjekt2:containsMeat rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
         <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Pork"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#BBQ"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Chili"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Ketchup"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mayo"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
         <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Super Burger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tomato"/>
     </owl:NamedIndividual>
     
 
@@ -1793,15 +1804,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeganBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
-        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
-        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
-        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
-        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.99</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">257</MiniProjekt2:hasCalories>
         <MiniProjekt2:hasName>Vegan Burger</MiniProjekt2:hasName>
+        <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Tofu"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganBun"/>
+        <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganCheese"/>
+        <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#VeganSauce"/>
     </owl:NamedIndividual>
     
 
@@ -1810,16 +1821,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#_VeggieBurger">
         <rdf:type rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Burger"/>
+        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">254</MiniProjekt2:hasCalories>
+        <MiniProjekt2:hasName>Veggie Burger</MiniProjekt2:hasName>
         <MiniProjekt2:hasAllergens rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Allergen"/>
-        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
         <MiniProjekt2:hasCheese rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Cheddar"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Mushroom"/>
         <MiniProjekt2:hasIngredient rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Onion"/>
-        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
+        <MiniProjekt2:hasBun rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Sesame"/>
         <MiniProjekt2:hasSauce rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#SweetChili"/>
-        <MiniProjekt2:hasCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">254</MiniProjekt2:hasCalories>
-        <MiniProjekt2:hasName>Veggie Burger</MiniProjekt2:hasName>
-        <MiniProjekt2:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.99</MiniProjekt2:hasPrice>
+        <MiniProjekt2:hasPatty rdf:resource="http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#Veggie"/>
     </owl:NamedIndividual>
     
 
@@ -1844,5 +1855,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
 

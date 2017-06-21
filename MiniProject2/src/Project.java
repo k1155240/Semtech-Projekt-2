@@ -222,11 +222,7 @@ public class Project {
 					}
 				}
 				else {
-					System.out.print("Property Value: ");
-					String value = sc.nextLine();
-
-					OWLDataProperty prop = df.getOWLDataProperty(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + propertyName));
-					OWLAxiom assertion = df.getOWLDataPropertyAssertionAxiom(prop, newIndi, value);
+					OWLAxiom assertion = getDataProperty(sc, newIndi, propertyName);
 					add.add(new AddAxiom(myOntology, assertion));
 				}
 			}
@@ -235,6 +231,20 @@ public class Project {
 			System.out.println("Invalid input");
 		}
 		return addProp;
+	}
+
+	private static OWLAxiom getDataProperty(Scanner sc, OWLNamedIndividual newIndi, String propertyName) {
+		System.out.print("Property Value: ");
+		String value = sc.nextLine();
+		OWLAxiom assertion;
+		OWLDataProperty prop = df.getOWLDataProperty(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + propertyName));
+		if(prop.getRanges(myOntology).iterator().next().asOWLDatatype().getBuiltInDatatype().name().equals("XSD_DOUBLE")) {
+			assertion = df.getOWLDataPropertyAssertionAxiom(prop, newIndi, Double.parseDouble(value));
+		}
+		else {
+			assertion = df.getOWLDataPropertyAssertionAxiom(prop, newIndi, value);
+		}
+		return assertion;
 	}
 
 	private static void showSpecific() throws OWLOntologyCreationException {
@@ -317,11 +327,7 @@ public class Project {
 									}
 								}
 								else {
-									System.out.print("Property Value: ");
-									String value = sc.nextLine();
-
-									OWLDataProperty prop = df.getOWLDataProperty(IRI.create("http://www.semanticweb.org/max/ontologies/2017/5/MiniProjekt2#" + propertyName));
-									OWLAxiom assertion = df.getOWLDataPropertyAssertionAxiom(prop, i, value);
+									OWLAxiom assertion = getDataProperty(sc, i, propertyName);
 									m.removeAxiom(myOntology, assertion);
 								}
 							}
