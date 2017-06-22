@@ -158,7 +158,6 @@ public class Project {
 				continue;
 			else {
 				int index = Integer.parseInt(action);
-				sc.nextLine();
 				OWLNamedIndividual indi = (OWLNamedIndividual)instances.getFlattened().toArray()[index];
 				OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(prop, newIndi, indi);
 				add.add(new AddAxiom(myOntology, assertion));
@@ -215,7 +214,6 @@ public class Project {
 						return addProp;
 					else {
 						int index = Integer.parseInt(action);
-						sc.nextLine();
 						OWLNamedIndividual indi = (OWLNamedIndividual)instances.getFlattened().toArray()[index];
 						OWLAxiom assertion = df.getOWLObjectPropertyAssertionAxiom(prop, newIndi, indi);
 						add.add(new AddAxiom(myOntology, assertion));
